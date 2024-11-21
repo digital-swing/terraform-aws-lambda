@@ -112,3 +112,9 @@ variable "triggers" {
   type        = map(string)
   default     = {}
 }
+
+variable "cache_from" {
+  description = "Images to consider as cache sources"
+  type        = list(string)
+  default     = []
+}
